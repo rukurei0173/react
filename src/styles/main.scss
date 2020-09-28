@@ -1,0 +1,16 @@
+$background-color: #fdede4;
+$navy-color: #03384B;
+$white-color: #FFFEF9;
+$gray-color: #666666;
+
+@import './Background.scss';
+@import  './TopPane.scss';
+@import  './Contentitems1.scss';
+@import  './Contentitems2.scss';
+@import  './Contentitems3.scss';
+@import  './Contentitems4.scss';
+@import  './Banner.scss';
+
+@import './_btn.scss';
+@import './_text.scss';
+//#FEEEED;

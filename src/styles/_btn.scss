@@ -1,0 +1,37 @@
+.button{
+  position:relative;
+  margin: 0rem;
+  font-family: 'Hiragino Maru Gothic Pro W4';
+  color: $navy-color;
+  border: 0.1rem solid $navy-color;
+  border-radius: 0.1rem;
+  background-color: $background-color;
+  width:30%;
+  padding: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.8rem;
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin: -0.3rem 0 0 0;
+    border-bottom: solid 0.125rem $navy-color;
+    border-right: solid 0.125rem $navy-color;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  &:hover {
+    background-color: $navy-color;
+    border-color: $navy-color;
+    color: $background-color;
+    &:after{
+      border-bottom: solid 0.125rem $background-color;
+      border-right: solid 0.125rem $background-color;
+    }
+  }
+}

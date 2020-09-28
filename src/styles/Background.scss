@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Noto Serif JP';
+  //src: url(${require("../font/Kokoro.otf")});
+  src: url('../font/NotoSerifJP-Regular.otf') format('opentype');
+}
+
+
+
+.Background {
+    font-family: 'Hiragino Maru Gothic Pro W4', sans-serif;
+    width: 400px;
+    color: #0D0D0D;
+    margin: 0rem;
+    background-color: $background-color;
+}

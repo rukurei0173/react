@@ -1,0 +1,74 @@
+.Contentitems3{
+  text-align: center;
+  position: relative;
+  .wrap{
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)) 0 0/1.875rem 100%, linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)) right/1.875rem 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    margin-top: 0.7rem;
+    .ul {
+      list-style-type: none;
+      display: flex;
+      overflow-x: scroll;
+      padding: 0.625rem 0.625rem;
+      margin: 0rem;
+      background: linear-gradient(to left, hsla(0,0%,100%,0), $background-color 0.94rem) 0 0 / 3.125rem 100%, linear-gradient(to right, hsla(0,0%,100%,0), $background-color 0.94rem) right / 3.125rem 100%;
+      background-repeat: no-repeat;
+      background-attachment: local;
+      &::-webkit-scrollbar {
+         display:none;
+      }
+    }
+
+    .itemBox{
+      min-width: 80%;
+      height: 20rem;
+      margin: 0 0.625rem 0.625rem 0;
+      .img{
+        height: 13.75rem;
+      }
+      .textBox{
+        height: 5.5rem;
+        .h1 {
+          font-size: 0.875rem;
+          margin-top: 0.25rem;
+          padding-top: 0.5rem;
+        }
+        .localtext{
+          font-size: 0.2rem;
+        }
+        .lanktext{
+          font-size: 0.2rem;
+        }
+        .h3 {
+          margin: 0.375rem 0rem;
+        }
+      }
+    }
+  }
+
+  .button{
+    padding: 0rem;
+    width:20%;
+    position: absolute;
+    top: -1.2rem;
+    right: 0rem;
+    font-size: 0.8rem;
+    border: 0rem none;
+    &:after {
+      right: 1rem;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+    &:hover {
+      background-color: $background-color;
+      border-color:  $background-color;
+      color: $navy-color;
+      &:after{
+        border-bottom: solid 0.125rem $navy-color;
+        border-right: solid 0.125rem $navy-color;
+        right:0.7rem;
+      }
+    }
+  }
+}
